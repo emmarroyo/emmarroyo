@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    body{
+        font-family: "Open Sans", sans-serif;
+    }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+}
+
+li div{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+nav li a.active {
+  color: rgb(255, 255, 255);
+  background-color: #8e8594;
+}
+
+header{
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 2.1em;
+    color:#4e4663;
+}
+
+.bgColor{
+  height:100px;
+  background-color: #4e4663;
+  color:white;
+}
+
+.main{
+  padding-top:20px;
+}
+
+h3{
+    color:#73698b;
+}
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+button a {
+    text-decoration: none;
+}
+.col1{
+    width:75%;
+    vertical-align: top;
+}
+.col2{
+    padding-top: 20px;
+    vertical-align: top;
+    padding-left:20px;
+}
+
+.EQ{
+    box-shadow: 6px 6px 2px 2px rgba(99, 92, 110, 0.2);
+    border:2px solid rgb(207, 199, 199);
+}
+
+.MS{
+    font-style:italic;
+    color:red;
+}
+#MS {
+  display:none;
+}
+.resources{
+    background-color: #e7e2eb;
+    font-style: italic;
+    padding:10px;
+    width:80%;
+}
+.toRemember{
+    background-color: #d5c4e0;
+    padding:10px;
+    width:80%;
+}
+section li{
+  padding-top:15px;
+}
+section h2{
+  height:100px;
+  line-height: 100px;;
+}
+
+section{
+  padding-left:100px;
+}
+.subtitle{
+    background-color: #e1d8e7;
+    padding: 5px;
+}
+
+table{
+    width:100%;
+}
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li style="float:left"><div>IAL IT Pearson</div></li> 
+        <li><a href="Unit2.html">Unit 2</a></li>
+        <li><a class="active" href="Unit1.html">Unit 1</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Topic 2: Networks</h1>
+</header>
+
+&#10092;&#10092;  <a href="p1_Unit1.html"> Back to Unit 1</a>
+<section class="bgColor"><h2>What you need to know</h2></section>
+<section class="main">
+    <h3 class="subtitle">2.1 Network models and protocols</h3>
+    <table>
+        <tr>
+            <td class="col1">
+                <h3>2.1.1 Understand the features and functions of computer network models:</h3>
+                <ol type="a">
+                    <li>client-server</li>
+                    <li>peer-to-peer</li>
+                    <li>ad hoc networks</li>
+                    <li>tethering</li>
+                </ol>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#211r" >&#10000; Revise</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>2.1.2 Understand the features and purposes of network communication protocols:  </h3>
+                <ol type="a">
+                    <li>Wi-Fi</li>
+                    <li>Zigbee</li>
+                    <li>Bluetooth</li>
+                    <li>cellular ; Global System for Mobile (GSM) communications (3G/4G)</li>
+                    <li>infrared</li>
+                    <li>ethernet</li>
+                </ol>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#212r" >&#10000; Revise</a></button>
+                <br><br>
+                <button class="button-30" role="button"><a href="#212" >&#9997; Exam Q</a></button>  
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <h3>2.1.3 Understand the features, functions, and use of network standards and protocols:</h3>
+                <ol type="a">
+                    <li>Transmission Control Protocol/Internet Protocol (TCP/IP)</li>
+                    <li>Voice Over Internet Protocol (VOIP)</li>
+                    <li>Session Initiation Protocol (SIP)</li>
+                    <li>7-layer Open Systems Interconnection (OSI) Model.</li>
+                </ol>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#213" >&#9997; Exam Q</a></button> 
+            </td>
+        </tr>
+    </table>
+    <h3 class="subtitle">2.2 Network design and implementation</h3>
+    <table>         
+        <tr>
+            <td class="col1">
+                <h3>2.2.1 Understand the characteristics of different network transmission media:</h3>           
+                <ol type="a">
+                    <li>wireless:</li>
+                    <ol type="i">
+                        <li>microwave</li>
+                        <li>radio</li>
+                        <li>light</li>
+                        <li>satellite</li>
+                    </ol>
+                    <li>wired</li>
+                    <ol type="i">
+                        <li>copper : twisted pair and cable</li>
+                        <li>fibre</li>
+                        <li>powerline</li>
+                    </ol>
+                </ol> 
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#221r" >&#10000; Revise</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <h3>2.2.2 Understand a variety of network metrics:</h3>
+                <ol type="a">
+                    <li>speed</li>
+                    <li>bandwidth</li>
+                    <li>throughput</li>
+                    <li>scalability</li>
+                    <li>latency</li>
+                    <li>error rate</li>
+                    <li>packet loss</li>
+                    <li>availability</li>
+                    <li>jitter</li>
+                </ol>
+            </td>
+            <td class="col2">
+  
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <h3>2.2.3 Understand the role of components in networks:</h3>
+                <ol type="a">
+                    <li>switch</li>
+                    <li>router</li>
+                    <li>bridge</li>
+                    <li>gateway</li>
+                    <li>multi-function device :combined router/switch</li>
+                    <li>modem</li>
+                    <li>repeater</li>
+                    <li>modem</li>
+                    <li>Network Interface Card (NIC)</li>
+                    <li>Wireless access point</li>
+                    <li>hubs</li>
+                </ol>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#223r" >&#10000; Revise</a></button>
+                <br><br>
+                <button class="button-30" role="button"><a href="#223" >&#9997; Exam Q</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <h3>2.2.4 Be able to produce outline designs for networks to meet specified requirements that
+                    take account of location of devices</h3>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#224" >&#9997; Exam Q</a></button> 
+            </td>
+        </tr>
+        <tr>
+            <td class="col1">
+                <h3>2.2.5 Understand the characteristics and function of</h3>
+                <ol type="a">
+                    <li>IP addressing:</li>
+                    <ol type="i">
+                        <li>Internet Protocol version 4 (IPv4)</li>
+                        <li>Internet Protocol version 6 (IPv6)</li>
+                        <li>Static</li>
+                        <li>Dynamic</li>
+                        <li>DHCP</li>
+                    </ol>
+                    <li>Media Access Control (MAC) addressing</li>
+                </ol>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#225r" >&#10000; Revise</a></button>
+                <br><br>
+                <button class="button-30" role="button"><a href="#225" >&#9997; Exam Q</a></button>
+            </td>
+        </tr>          
+</table>
+<h3 class="subtitle">2.3 Network security</h3>
+<table>
+    <tr>
+        <td class="col1">
+            <h3>2.3.1 Understand the impact of network security issues on individuals and organisations (threats and solutions, open networks)</h3>
+            <h3>2.3.2 Understand how to secure a network using both hardware and software:</h3>
+            <ol type="a">
+                <li>firewall</li>
+                <li>security settings</li>
+                <li>anti malware</li>
+                <li>user controls/access/rights/profile</li>
+                <li>authentication types (including passwords, two-factor, biometrics)</li>
+                <li>encryption techniques</li>
+                <li>physical controls</li>
+            </ol>
+        </td>
+        <td class="col2">
+            <button class="button-30" role="button"><a href="#232r" >&#10000; Revise</a></button>
+            <br><br>
+            <button class="button-30" role="button"><a href="#232" >&#9997; Exam Q</a></button> 
+        </td>
+    </tr>
+
+
+    
+</table>
+</section>
+
+<section class="bgColor"><h2>Revise</h2></section>
+<section class="main">
+    <h3 id="211r">Computer network models</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/w_LyIDAh_bY">client server and peer to peer networks</a></p>
+        <p>&#10137; TeachIct page about <a href="https://www.teach-ict.com/as_a2_ict_new/ocr/AS_G061/317_role_impact_ict/networks/miniweb/index.htm">types of netorks </a></p>
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>A client-server network is a network which uses a central server</li>
+            <li>client-server networks are centralised.</li>
+            <li>A server is a computer configured to wait for requests from clients and execute them. For instance, a web server stores webpages. It waits for clients request to sent back the requested webpages.</li>
+            <li>Types of servers include: web server (stores webpages), file server (stores files centrally), email server, dhcp server (gives IP addresses to the clients)... </li>
+        </ul>
+    </div>
+    <br><br>
+
+    <h3 id="212r">Communication protocols and network metrics</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/BYQHw3-zh0I">comparing wired and wireless</a></p>
+        <p>&#10137; Slides <a href="https://docs.google.com/presentation/d/16pfii8ErrBCsSV9ZbxiMZz20iRJeJ69FxUPmJj_ioGc/edit?usp=sharing">here</a></p>
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>Wi-Fi and 4G consume the most energy but have the largest range</li>
+            <li>Zigbee is very simple to implement and low power: well suited to IoT devices</li>
+            <li>Infrared communication needed a clear line of sight (doesn't go through obstacles or walls)</li>
+            <li>Ethernet is wired connection: mare stable/reliable as it is less prone to interferences and usually faster as the bandwidth is larger than wireless connections</li>
+        </ul>
+    </div>
+    <br><br>
+
+    
+    <h3 id="213r">TCP IP protocol</h3>
+    <div class="resources">
+        <p>&#10137; Introductory video about <a href="https://youtu.be/AYdF7b3nMto">TCP IP</a></p>
+        <p>&#10137; Craig n Dave video about the <a href="https://youtu.be/R5aJSWucbe8">TCP IP model</a></p>    
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>When data is sent out, the TCP protocol is in charge of splitting the data into packets and labelling those packets</li>
+            <li>When data is received, TCP protocol is in charge of checking that all the packets have been received, (error control)</li>
+            <li>IP in charge of choosing the shortest path available to transmit the data packets</li>
+
+            </ul>
+    </div>
+    <br><br>
+
+    <h3 id="213r">OSI model</h3>
+    <div class="resources">
+        <p>&#10137; TeachICT webpage about <a href="https://www.teach-ict.com/2016/AS_Computing/OCR_H046/1_3_exchanging_data/133_four_layer/miniweb/index.php">OSI model</a></p>    
+        <p>&#10137; Video of a real life example of how data travels through <a href="https://youtu.be/3kfO61Mensg">the OSI model</a></p>
+       
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>The OSI model is used to describe data being sent between two computers on a network</li>
+            <li>The OSI model is made of 7 layers that must be remembered.</li>
+            <li>When data is sent from a computer to another one, it first travels down through all the layers (from application to physical), then via the cables to the recieving end where it goes up through all the layers (from physical to application)</li>
+            <li>Each time data is passed to another layer, a header or a trailer is added to the actual data with information like the IP address, MAC address etc. The data plus the new header or trailer is packaged up and transmitted to the next layer. This process is called encapsulation.</li>
+        </ul>
+    </div>
+    <br><br>
+
+    <h3 id="223r">Network hardware</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/niZyF7Zw4rg">here</a></p>
+        <p>&#10137; TeachIct page about <a href="https://www.teach-ict.com/as_a2_ict_new/ocr/A2_G063/333_networks_coms/network_components/miniweb/index.htm">network components</a></p>    
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+        <li>At home, the internet box comprises the modem, the router and a switch</li>
+        <li>The end devices are connected to a switch first, itself connected to a router then to a modem which allows connection to the internet</li>
+        </ul>
+    </div>
+    <br><br>
+
+    
+
+    <h3 id="225r">IP and MAC addressing</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/p9D0Ca3VNpM">here</a></p>
+        <p>&#10137; Teach ICT page on <a href="http://www.teach-ict.com/gcse_computing/ocr/215_communications_networking/addressing_protocols/miniweb/index.php">addressing</a></p>
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+        <li>Secondary storage is where your personal files, programs are stored</li>
+        <li>Secondary storage is non-volatile: the data is retained after the computer has been switched off</li>
+        <li>The main types of storage media are: optical, flash and magnetic</li>
+        </ul>
+    </div>
+    <br><br>
+
+    <h3 id="232r">Network security</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave videos about <a href="https://student.craigndave.org/videos/slr1-4-network-security">threats and prevention</a></p>
+        <p>&#10137; Teach ICT page on <a href="https://www.teach-ict.com/2016/GCSE_Computing/OCR_J276/1_6_network_security/network_threats/miniweb/index.php">threats</a></p>
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+        <li></li>
+    </div>
+    <br><br>
+
+
+</section>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+
+
+<section class="bgColor"><h2>Exam questions</h2></section>
+<section class="main">
+    <h3 id="212">2.1.2 Communication protocols.     </h3>
+    <table>
+        <tr>
+            <td><img class="EQ" src="212_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="212_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <table>
+
+    <h3 id="213">2.1.3 Network standard and protocols.     </h3>
+    <table>
+        <tr>
+            <td><img class="EQ" src="213_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="213_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <table>
+        <tr>
+            <td><img class="EQ" src="213_EQ2.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="213_MS2.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <h3 id="223">2.2.3 Network hardware     </h3>
+    <table>
+        <tr>
+            <td><img class="EQ" src="223_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="223_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <h3 id="224">2.2.4 Designing networks     </h3>
+    <table>
+        <tr>
+            <td><img class="EQ" src="224_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="224_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <table>
+        <tr>
+            <td><img class="EQ" src="224_EQ2.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="224_MS2.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <h3 id="225">2.2.5 IP addressing     </h3>
+    <table>
+        <tr>
+            <td><img class="EQ" src="225_EQ2.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="225_MS2.png"></div>
+            </td>
+        </tr>
+        <tr>
+            <td><br><br><br>
+            <br><br><br></td>
+        </tr>
+        <tr>
+            <td><img class="EQ" src="225_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="225_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+</section>
+
+<script>
+
+function next(elem) {
+    do {
+        elem = elem.nextSibling;
+    } while (elem && elem.nodeType != 1);
+    return elem;                
+}
+
+function toggle(elem) {
+    var nextElem = next(elem);
+	
+    if (nextElem.style.display==='block') { nextElem.style.display='none'; }
+    else { nextElem.style.display='block'; }
+}
+
+    
+    </script>
+</body>
+</html>
+
+

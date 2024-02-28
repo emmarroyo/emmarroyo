@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    body{
+        font-family: "Open Sans", sans-serif;
+    }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+}
+
+li div{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+nav li a.active {
+  color: rgb(255, 255, 255);
+  background-color: #8e8594;
+}
+
+header{
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 2.1em;
+    color:#4e4663;
+}
+
+.bgColor{
+  height:100px;
+  background-color: #4e4663;
+  color:white;
+}
+
+.main{
+  padding-top:20px;
+}
+
+h3{
+    color:#73698b;
+}
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+button a {
+    text-decoration: none;
+}
+.col1{
+    width:75%;
+    vertical-align: top;
+}
+.col2{
+    padding-top: 20px;
+    vertical-align: top;
+    padding-left:20px;
+}
+
+.EQ{
+    box-shadow: 6px 6px 2px 2px rgba(99, 92, 110, 0.2);
+    border:2px solid rgb(207, 199, 199);
+}
+
+.MS{
+    font-style:italic;
+    color:red;
+}
+#MS {
+  display:none;
+}
+.resources{
+    background-color: #e7e2eb;
+    font-style: italic;
+    padding:10px;
+    width:80%;
+}
+.toRemember{
+    background-color: #d5c4e0;
+    padding:10px;
+    width:80%;
+}
+section li{
+  padding-top:15px;
+}
+section h2{
+  height:100px;
+  line-height: 100px;;
+}
+
+section{
+  padding-left:100px;
+}
+.subtitle{
+    background-color: #e1d8e7;
+    padding: 5px;
+}
+
+table{
+    width:100%;
+}
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li style="float:left"><div>IAL IT Pearson</div></li> 
+        <li><a href="Unit2.html">Unit 2</a></li>
+        <li><a class="active" href="Unit1.html">Unit 1</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Topic 4: IT systems</h1>
+</header>
+
+&#10092;&#10092;  <a href="p1_Unit1.html"> Back to Unit 1</a>
+<section class="bgColor"><h2>What you need to know</h2></section>
+<section class="main">
+    <h3 class="subtitle">4.1 Systems design</h3>
+    <table>
+        <tr>
+            <td class="col1">
+                <h3>4.1.1 Understand the concept of an IT system:</h3>
+                <ol type="a">
+                    <li>Hardware</li>
+                    <li>software</li>
+                    <li>processes</li>
+                    <li>People</li>
+                </ol>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#411r" >&#10000; Revise</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>4.1.2 Understand how to decompose a system into smaller sub-systems and components.</h3>
+                <h3>4.1.3 Be able to design IT systems, from individual components and sub-systems, to meet specified requirements. (Symbols are given in Appendix 7.)</h3>
+                <h3>4.1.4 Understand the concept of fitness for purpose when evaluating systems</h3>
+            </td>
+        </tr>
+        
+    </table>
+    <h3 class="subtitle">4.2 Dataflow</h3>
+    <table>         
+        <tr>
+            <td class="col1">
+                <h3>4.2.1 Understand the concept of and the need for dataflow diagrams.</h3>  
+                <h3>4.2.2 Be able to interpret and create dataflow diagrams for a given scenario. (Symbols are given in Appendix 7.)</h3>
+            </td>
+            <td class="col2">
+                <button class="button-30" role="button"><a href="#421r" >&#10000; Revise</a></button>
+                <br><br><br>
+            <button class="button-30" role="button"><a href="#421" >&#9997; Exam Q</a></button> 
+            </td>
+        </tr>
+    </table>
+<h3 class="subtitle">4.3 Flowcharts</h3>
+<table>
+    <tr>
+        <td class="col1">
+            <h3>4.3.1 Understand the concept of and the need for flowcharts.</h3>
+            <h3>4.3.2 Be able to interpret and create flowcharts for a given scenario.(Symbols are given in Appendix 7.)</h3>
+            
+        </td>
+        <td class="col2">
+            <button class="button-30" role="button"><a href="#232r" >&#10000; Revise</a></button>
+            <br><br><br>
+            <button class="button-30" role="button"><a href="#232" >&#9997; Exam Q</a></button> 
+        </td>
+    </tr>
+</table>
+<h3 class="subtitle">4.4 Systems</h3>
+<table>
+    <tr>
+        <td class="col1">
+            <h3>4.4.1 Understand the advantages and disadvantages of IT systems for individuals and organisations.</h3>
+            <h3>4.4.2 Understand how a range of contemporary digital devices, peripheral devices, storage
+                devices and memory are used in IT systems to meet the needs of individuals and
+                organisations.</h3>
+        </td>
+        <td class="col2">
+            <button class="button-30" role="button"><a href="#341r" >&#10000; Revise</a></button>
+            <br><br><br>
+            <button class="button-30" role="button"><a href="#341" >&#9997; Exam Q</a></button> 
+        </td>
+    </tr>
+</table>
+</section>
+
+
+
+
+<section class="bgColor"><h2>Revise</h2></section>
+<section class="main">
+    <h3 id="311r">IP addressing and DNS</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/H5jGQingnWI">here</a></p>
+        <p>&#10137; TeachIct page about <a href="https://www.teach-ict.com/gcse_computing/ocr/215_communications_networking/IP_and_DNS/miniweb/pg10.php">DNS </a></p>
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>A client-server network is a network which uses a central server</li>
+            <li>client-server networks are centralised.</li>
+            <li>A server is a computer configured to wait for requests from clients and execute them. For instance, a web server stores webpages. It waits for clients request to sent back the requested webpages.</li>
+            <li>Types of servers include: web server (stores webpages), file server (stores files centrally), email server, dhcp server (gives IP addresses to the clients)... </li>
+        </ul>
+    </div>
+    <br><br>
+
+    <h3 id="313r">Static and dynamic websites</h3>
+    <div class="resources">
+        <p>&#10137; Webpage explaining the <a href="https://www.pluralsight.com/blog/creative-professional/static-dynamic-websites-theres-difference">difference</a></p>
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/S_Ti1VUX6x8">here</a></p>
+        <p>&#10137; Slides <a href="https://docs.google.com/presentation/d/1w9wLU-eCQdnGJkyXlEuVZ1VzZRW8EHb28-53WYEv4Ac/edit?usp=sharing">here</a></p>
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>Wi-Fi and 4G consume the most energy but have the largest range</li>
+            <li>Zigbee is very simple to implement and low power: well suited to IoT devices</li>
+            <li>Infrared communication needed a clear line of sight (doesn't go through obstacles or walls)</li>
+            <li>Ethernet is wired connection: mare stable/reliable as it is less prone to interferences and usually faster as the bandwidth is larger than wireless connections</li>
+        </ul>
+    </div>
+    <br><br>
+
+ 
+
+
+</section>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+
+
+<section class="bgColor"><h2>Exam questions</h2></section>
+<section class="main">
+
+
+    <h3 id="421">4.2.1 Dataflow diagrams </h3>
+    <table>
+        <tr>
+            <td><img class="EQ" src="421_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="421_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    <table>
+        <tr>
+            <td><img class="EQ" src="422_EQ1.png"></td>
+            <td class="col2">
+                <p class="MS" onclick="toggle(this); return false;">Show mark scheme (click again to hide)</p>
+                <div id="MS"><img src="422_MS1.png"></div>
+            </td>
+        </tr>
+    </table>
+    <br><br><br>
+    <br><br><br>
+    
+</section>
+
+<script>
+
+function next(elem) {
+    do {
+        elem = elem.nextSibling;
+    } while (elem && elem.nodeType != 1);
+    return elem;                
+}
+
+function toggle(elem) {
+    var nextElem = next(elem);
+	
+    if (nextElem.style.display==='block') { nextElem.style.display='none'; }
+    else { nextElem.style.display='block'; }
+}
+
+    
+    </script>
+</body>
+</html>
+
+
