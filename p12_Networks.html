@@ -3,6 +3,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Year 12 - IAL IT</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <style>
     body{
@@ -172,8 +173,8 @@ table{
 <nav>
     <ul>
         <li style="float:left"><div>IAL IT Pearson</div></li> 
-        <li><a href="Unit2.html">Unit 2</a></li>
-        <li><a class="active" href="Unit1.html">Unit 1</a></li>
+        <li><a href="p2_Unit2.html">Unit 2</a></li>
+        <li><a class="active" href="p1_Unit1.html">Unit 1</a></li>
         <li><a href="index.html">Home</a></li>
     </ul>
 </nav>
@@ -351,7 +352,6 @@ table{
         <td class="col2">
             <button class="button-30" role="button"><a href="#232r" >&#10000; Revise</a></button>
             <br><br>
-            <button class="button-30" role="button"><a href="#232" >&#9997; Exam Q</a></button> 
         </td>
     </tr>
 
@@ -370,8 +370,10 @@ table{
     <div class="toRemember">
         <p><b>Points to remember:</b></p>
         <ul>
-            <li>A client-server network is a network which uses a central server</li>
-            <li>client-server networks are centralised.</li>
+            <li>A client-server network is a network which uses a central server.</li>
+            <li>In a client-server network, a client requests a service from a server.</li>
+            <li>In a peer-to-peer network, each device acts as the client and the server at the same time.</li>
+            <li>Advantage of client server networks: they are centralised, which makes security easier to manage for instance.</li>
             <li>A server is a computer configured to wait for requests from clients and execute them. For instance, a web server stores webpages. It waits for clients request to sent back the requested webpages.</li>
             <li>Types of servers include: web server (stores webpages), file server (stores files centrally), email server, dhcp server (gives IP addresses to the clients)... </li>
         </ul>
@@ -389,7 +391,8 @@ table{
             <li>Wi-Fi and 4G consume the most energy but have the largest range</li>
             <li>Zigbee is very simple to implement and low power: well suited to IoT devices</li>
             <li>Infrared communication needed a clear line of sight (doesn't go through obstacles or walls)</li>
-            <li>Ethernet is wired connection: mare stable/reliable as it is less prone to interferences and usually faster as the bandwidth is larger than wireless connections</li>
+            <li>Advantages of wired connection (ethernet): more stable/reliable as it is less prone to interferences, faster transmission as the bandwidth is larger than wireless connections, more secure as data can't be intercepted.</li>
+            <li>Advantages of wireless connections: convenience (you can move around), simpler to add mobile devices.</li>
         </ul>
     </div>
     <br><br>
@@ -428,6 +431,20 @@ table{
     </div>
     <br><br>
 
+    <h3 id="221r">Transmission media</h3>
+    <div class="resources">
+        <p>&#10137; Craig n Dave video <a href="https://youtu.be/JhoZN0QoDX4">here</a></p>
+        <p>&#10137; TeachIct page about <a href="https://www.teach-ict.com/as_a2_ict_new/ocr/A2_G063/333_networks_coms/optical_wireless/miniweb/pg3.htm">fibre optic</a></p>    
+    </div>
+    <div class="toRemember">
+        <p><b>Points to remember:</b></p>
+        <ul>
+            <li>Twisted pair cable is affordable but has a limited bandwidth, range and is more prone to interference compared to fiber optics</li>
+            <li>Fiber optics transmits data in the form of ligth pulses along a glass fibre. It is best used for long-distance transmission and when large bandwidth is needed.</li>
+        </ul>
+    </div>
+    <br><br>
+
     <h3 id="223r">Network hardware</h3>
     <div class="resources">
         <p>&#10137; Craig n Dave video <a href="https://youtu.be/niZyF7Zw4rg">here</a></p>
@@ -436,8 +453,11 @@ table{
     <div class="toRemember">
         <p><b>Points to remember:</b></p>
         <ul>
-        <li>At home, the internet box comprises the modem, the router and a switch</li>
-        <li>The end devices are connected to a switch first, itself connected to a router then to a modem which allows connection to the internet</li>
+            <li>At home, the internet box comprises the modem, the router and a switch</li>
+            <li>The end devices are connected to a switch first, itself connected to a router then to a modem which allows connection to the internet</li>
+            <li>A switch receives data on its input ports and forwards it to the correct output port (and destination device)</li>
+            <li>A hub receives data on its input ports and forwards it to all the other port (and devices connected to them)</li>
+            <li>A router reads the IP address on data packets and forwards it to the correct LAN</li>
         </ul>
     </div>
     <br><br>
@@ -452,9 +472,10 @@ table{
     <div class="toRemember">
         <p><b>Points to remember:</b></p>
         <ul>
-        <li>Secondary storage is where your personal files, programs are stored</li>
-        <li>Secondary storage is non-volatile: the data is retained after the computer has been switched off</li>
-        <li>The main types of storage media are: optical, flash and magnetic</li>
+            <li>The MAC address is found on each computer's NIC (Network Interface Card). It is given by the manufacturer and never changes</li>
+            <li>An IP address is a unique identifier given to a computer as soon as it connects to a network.</li>
+            <li>A MAC address can be used to forward data packets to the correct device within a LAN, and to filter out incoming data (the router has a white list of mac addresses that are allowed to connect)</li>
+            <li>An IP address is used to identify every device connected to a same network</li>
         </ul>
     </div>
     <br><br>
@@ -467,7 +488,10 @@ table{
     <div class="toRemember">
         <p><b>Points to remember:</b></p>
         <ul>
-        <li></li>
+            <li>Threats include: Fishing (social engineering), malware, SQL injections, DDOS attacks ... </li>
+            <li>Prevention methods include: installing and updating an antimalware software, firewall, education/prevention </li>
+            <li>Hardware firewalls are installed on the router or on a separate dedicated device </li>
+            <li>Software firewall is installer on the client's computer</li>
     </div>
     <br><br>
 
