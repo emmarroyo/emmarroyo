@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+body{
+  font-family: "Open Sans", sans-serif;  
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+nav li {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+}
+
+li div{
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 36px;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+nav li a.active {
+  color: rgb(255, 255, 255);
+  background-color: #8e8594;
+}
+
+header{
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 2.1em;
+    color:#4e4663;
+}
+
+
+button {
+  border: none;
+  background-color: #e7e7e7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:10px;
+  box-shadow: 10px 10px grey;
+  margin-bottom:50px;
+  margin-top:50px;
+  color:#4e4663;
+}
+.centre{
+  width:700px;
+  height:700px;
+  margin:auto;
+  text-align:center;
+}
+
+#card{
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 15px;
+  width: 500px;
+  height:150px;
+  margin: auto; 
+  padding-top:100px;
+  background-color:#8a81a3;
+  font-size: 2.2em;
+}
+form{
+  color:#666;
+}
+p{
+  font-style: italic;
+  font-size: 1.5em;
+}
+input{
+  margin-left:30px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li style="float:left"><div>IAL IT Pearson</div></li> 
+        <li><a class="active" href="Unit2.html">Unit 2</a></li>
+        <li><a href="Unit1.html">Unit 1</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Random keyword generator</h1>
+</header>
+
+<div class="centre">
+  <p>Can you define them?</p>
+  <button onclick="generateKeyword()">Click me to display a keyword</button>
+  <br>
+  <form>
+    <input type="radio" name="option" value="html">HTML only
+    <input type="radio" name="option" value="css">CSS only
+    <input type="radio" name="option" value="js">JS only
+    <input type="radio" name="option" value="all" checked>All of them
+  </form>
+  <br><br><br>
+  <h1 id="card"></h1>
+
+
+
+</div>
+
+  
+
+<script>
+  var color="#8a81a3";
+  var step=3000;
+  
+
+  function getRandomInt(min, max) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+}
+
+  function generateKeyword(){
+    var colorToInt = parseInt(color.substr(1), 16);                     // Convert HEX color to integer
+    nstep = parseInt(step);                                          
+    colorToInt += nstep;                                            // Increment integer with step
+    var ncolor = colorToInt.toString(16);                           // Convert back integer to HEX
+    ncolor = '#' + (new Array(7-ncolor.length).join(0)) + ncolor;   // Left pad "0" to make HEX look like a color
+    if(/^#[0-9a-f]{6}$/i.test(ncolor)){                             // Make sure that HEX is a valid color
+            color=ncolor;
+        }
+
+
+    var options = document.getElementsByName('option');
+            for (i = 0; i < options.length; i++) {
+                if (options[i].checked){
+                   var selection=options[i].value;
+                    }
+               }
+
+    var HTMLKeywords=["element","attribute", "metadata", "global attribute"];
+    var CSSKeywords=["element selector","universal selector", "box model", "absolute lengths"];
+    var JSKeywords=["DOM","regular expression", "variable", "array"];
+    var keywords=HTMLKeywords.concat(CSSKeywords).concat(JSKeywords);
+
+    if (selection=="html"){
+      keywords=HTMLKeywords;
+     }
+    else if(selection=="css"){
+      keywords=CSSKeywords;
+    }  
+    else if(selection=="js"){
+      keywords=JSKeywords;
+    }      
+
+    var numKeywords=keywords.length;
+    var index=getRandomInt(0,numKeywords);
+    document.getElementById("card").innerHTML=keywords[index];
+    document.getElementById("card").style.backgroundColor=color;
+
+  }
+</script>
+</body>
+</html>
+
+
