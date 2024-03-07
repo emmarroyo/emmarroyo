@@ -5,6 +5,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <style>
+#answer2{
+  display:none;
+}
 body{
   font-family: "Open Sans", sans-serif;  
 }
@@ -87,6 +90,18 @@ button {
   background-color:#8a81a3;
   font-size: 2.2em;
 }
+
+#card2{
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 15px;
+  width: 800px;
+  height:180px;
+  margin: auto; 
+  padding: 50px 20px 10px 20px;
+  background-color:#8a81a3;
+  font-size: 2.2em;
+}
+
 form{
   color:#666;
 }
@@ -126,12 +141,15 @@ input{
   </form>
   <br><br><br>
   <h1 id="card"></h1>
-
-
-
 </div>
 
-  
+<div class="centre">
+  <p>Which code, tag or attribute is used to do that?  </p>
+  <button onclick="generateKeyword2()">Click me to display an element</button>
+  <br><br>
+  <h1 id="card2"></h1>
+
+</div>
 
 <script>
   var color="#8a81a3";
@@ -183,6 +201,43 @@ input{
     document.getElementById("card").style.backgroundColor=color;
 
   }
+
+  function generateKeyword2(){
+    var colorToInt = parseInt(color.substr(1), 16);                     // Convert HEX color to integer
+    nstep = parseInt(step);                                          
+    colorToInt += nstep;                                            // Increment integer with step
+    var ncolor = colorToInt.toString(16);                           // Convert back integer to HEX
+    ncolor = '#' + (new Array(7-ncolor.length).join(0)) + ncolor;   // Left pad "0" to make HEX look like a color
+    if(/^#[0-9a-f]{6}$/i.test(ncolor)){                             // Make sure that HEX is a valid color
+            color=ncolor;
+        }
+
+    var keywords2=["tells the browser that the document is a HTML page","defines the language of an element", "defines metadata about an HTML document", "Refresh document every 30 seconds",
+    "sets the width of the page to follow the screen-width of the device","links to other documents, like a stylesheet","defines the page's tab title","an attribute used to give an identifier to one or several HTML elements",
+    "defines a unique identifier for a HTML element","a global attribute that specifies a shortcut key to focus an element","a global attribute that specifies the tab order of an element", "a global attribute that hides an element",
+    "a tag that defines a section in a document","a tag that defines emphasized text displayed in italic","a tag to define text with importance, displayed in bold","creates a numbered list","creates a bulleted list",
+    "create a definition list","attribute used to specify the type of bullet point for a list","the tag to create a hyperlink","the attribute to open a link in a new window","the tag to add an image","attribute defining alternative text displayed in place of an image which can't be displayed ",
+    "tag which creates a table","creates a row in a table","merges rows in a table","merges columns in a table","creates a table header","defines a border","creates a paragraph of text","creates a form","creates a dropdown list",
+    "creates a multi line input field","a tag used to group related data in a form","creates a checkbox in a form","creates a single line text input in a form","a tag used to embed another document within the current HTML document",
+    "tag used to play an audio file","tag used to show a video"];
+    var answers2=["doctype", "the lang attribute","<meta>","<meta http-equiv='refresh' content='30'>",
+    "<meta name='viewport' content='width=device-width, initial-scale=1.0'>","<link>","<title>","class",
+      "id", "acceskey","tabindex","hidden",
+    "section","<em>","<strong>","<ol>","<ul>",
+    "<dl>","<list-style-type>","<a>","target:_blank","<img>","alt",
+    "<table>","<tr>","rowspan","colspan","<th>","border: 1px solid black","<p>","<form>","<select>",
+      "<textarea>","<fieldset>","<input type='checkbox'>","<input type='text'>","<iframe>",
+      "<audio controls>","<video controls>"];    
+
+    var numKeywords2=keywords2.length;
+    var index=getRandomInt(0,numKeywords2);
+    document.getElementById("card2").innerHTML=keywords2[index];
+    document.getElementById("card2").style.backgroundColor=color;
+    document.getElementById("answer2").innerHTML=answers2[index];
+  }
+
+
+
 </script>
 </body>
 </html>
