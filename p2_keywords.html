@@ -97,7 +97,7 @@ button {
   width: 800px;
   height:180px;
   margin: auto; 
-  padding: 50px 20px 10px 20px;
+  padding: 50px 30px 10px 30px;
   background-color:#8a81a3;
   font-size: 2.2em;
 }
@@ -147,7 +147,10 @@ input{
   <p>Which code, tag or attribute is used to do that?  </p>
   <button onclick="generateKeyword2()">Click me to display an element</button>
   <br><br>
-  <h1 id="card2"></h1>
+  <h1 id="card2"></h1><br>
+  <div><em><span onclick="display()">Display the answer</span></em> /  <span onclick="hide()"><em>Hide the answer</em></span></div>
+
+  <p id="answer2"></p>
 
 </div>
 
@@ -221,13 +224,13 @@ input{
     "creates a multi line input field","a tag used to group related data in a form","creates a checkbox in a form","creates a single line text input in a form","a tag used to embed another document within the current HTML document",
     "tag used to play an audio file","tag used to show a video"];
     var answers2=["doctype", "the lang attribute","<meta>","<meta http-equiv='refresh' content='30'>",
-    "<meta name='viewport' content='width=device-width, initial-scale=1.0'>","<link>","<title>","class",
+    "<meta name='viewport' content='width=device-width, initial-scale=1.0'>","link","title","class",
       "id", "acceskey","tabindex","hidden",
-    "section","<em>","<strong>","<ol>","<ul>",
-    "<dl>","<list-style-type>","<a>","target:_blank","<img>","alt",
-    "<table>","<tr>","rowspan","colspan","<th>","border: 1px solid black","<p>","<form>","<select>",
-      "<textarea>","<fieldset>","<input type='checkbox'>","<input type='text'>","<iframe>",
-      "<audio controls>","<video controls>"];    
+    "section","em","strong","ol","'ul'",
+    "dl","list-style-type","a","target:_blank","img","alt",
+    "table","tr","rowspan","colspan","<th>","border: 1px solid black","<p>","<form>","<select>",
+      "textarea","fieldset","input type='checkbox'","input type='text'","iframe",
+      "audio controls","video controls"];    
 
     var numKeywords2=keywords2.length;
     var index=getRandomInt(0,numKeywords2);
@@ -236,7 +239,12 @@ input{
     document.getElementById("answer2").innerHTML=answers2[index];
   }
 
-
+function display(){
+  document.getElementById("answer2").style.display="block";
+}
+function hide(){
+  document.getElementById("answer2").style.display="none";
+}
 
 </script>
 </body>
